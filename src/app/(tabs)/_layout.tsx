@@ -1,10 +1,8 @@
-import clsx from "clsx";
 import { Tabs } from "expo-router";
 import { Image, View } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
+import { colors, components } from '../../../constants/theme';
 import { tabs } from '../../../data';
-import { useSafeAreaInsets } from 
-"react-native-safe-area-context";
-import {colors , components} from '../../../constants/theme'
 
 const tabBar = components.tabBar;
 
@@ -52,6 +50,7 @@ const TabLayout = () => {
            alignItems:'center'
          }
     }}
+    
     >
       {tabs.map((tab) => (
         <Tabs.Screen
