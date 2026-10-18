@@ -1,11 +1,17 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { styled } from 'nativewind';
+import { Text, View } from 'react-native';
+import { SafeAreaView as RNSafeAreaView } from "react-native-safe-area-context";
+const SafeAreaView = styled(RNSafeAreaView);
 
 const settings = () => {
   return (
-    <View>
-      <Text>settings</Text>
-    </View>
+    <SafeAreaView>
+      <View style={{ flex: 1, padding: 20 }}>
+        <Text>settings</Text>
+
+      </View>
+      
+    </SafeAreaView>
   )
 }
 
